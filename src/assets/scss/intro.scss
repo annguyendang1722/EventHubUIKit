@@ -1,0 +1,86 @@
+.intro {
+  padding-top: 75px;
+  &__sliderimg {
+    text-align: center;
+    img {
+      max-width: 80%;
+      width: 100%;
+      object-fit: contain;
+    }
+    margin-bottom: -100px;
+  }
+  &__box {
+    width: 100%;
+    height: 288px;
+    margin-bottom: -15px;
+    background-color: #5669ff;
+    padding: 40px 40px;
+    border-radius: 48px;
+    text-align: center;
+    p,
+    em {
+      color: white;
+    }
+    p {
+      font-size: 22px;
+      line-height: 34px;
+    }
+    em {
+      font-size: 15px;
+      opacity: 0.8;
+    }
+  }
+  &__inner {
+    max-width: 251px;
+    margin: 0 auto;
+  }
+  &__text {
+    .swiper-button-prev,
+    .swiper-button-next {
+      color: white !important;
+      opacity: 1 !important;
+      bottom: 14px;
+      top: auto;
+      width: 90px;
+    }
+    .swiper-button-next {
+      text-align: right;
+      right: 40px;
+    }
+    .swiper-button-prev {
+      left: 40px;
+    }
+    .swiper-button-next:after {
+      content: "Tiếp";
+      font-size: 18px;
+      right: 16px;
+      width: 90px;
+      font-family: "Archivo variant1", Tofu;
+    }
+    .swiper-button-disabled:after {
+      opacity: 0.8;
+    }
+    .swiper-button-prev:after {
+      content: "Bỏ qua";
+      font-size: 18px;
+      right: 16px;
+      font-family: "Archivo variant1", Tofu;
+    }
+    .swiper-pagination-bullet {
+      background-color: #7887ff;
+      &-active {
+        background-color: white;
+      }
+    }
+
+    .swiper-pagination-bullets {
+      bottom: 30px;
+      width: 200px;
+      margin: auto;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+
